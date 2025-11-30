@@ -1,66 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>David Castellon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <h1 class="site-title">David Castellon</h1>
-        <p class="site-subtitle">Software developer · Systems thinker · Builder</p>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <title>David Castellon – Computer Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">David Castellon</h1>
+      <p class="site-subtitle">Computer Engineer · I work on projects that interest me.</p>
+    </div>
+  </header>
 
-    <main class="container">
-      <section class="card">
-        <h2>About</h2>
-        <p>
-        I’m a software developer with experience in industrial systems, tooling,
-        and internal platforms. I like building things that make complex work
-        simpler and more reliable.
-        </p>
-      </section>
+  <main class="container">
+    <!-- Contact -->
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        607 6th St.<br />
+        Carrollton, KY 41008
+      </p>
+      <p>
+        <a href="tel:+15025259983">(502) 525-9983</a><br />
+        <a href="mailto:david.castellon.work@gmail.com">david.castellon.work@gmail.com</a>
+      </p>
+    </section>
 
-      <section class="card">
-        <h2>What I’ve Worked On</h2>
-        <ul>
-          <li><strong>Mirror / Dispatch:</strong> Internal platform for maintenance,
-            workflows, and job management.</li>
-          <li><strong>Industrial tooling:</strong> Data capture, visualization, and
-            process automation in manufacturing environments.</li>
-          <li><strong>Side projects:</strong> Apps, prototypes, and tools for writers
-            and musicians.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Contact</h2>
-        <p>
-        The best way to reach me is by email:
-        <a href="mailto:youremail@example.com">youremail@example.com</a>
-        </p>
-        <p>
-        You can also find me on LinkedIn:
-        <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noopener">
-          linkedin.com/in/your-linkedin
+    <!-- Resume PDF download -->
+    <section class="card">
+      <h2>Resume (PDF)</h2>
+      <p>
+        <a href="david-castellon-resume.pdf" download>
+          Download my resume as a PDF
         </a>
-        </p>
-      </section>
-    </main>
+      </p>
+      <p style="font-size: 0.9rem; opacity: 0.8;">
+        (Make sure you upload a file named <code>david-castellon-resume.pdf</code> to this repo.)
+      </p>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; <span id="year"></span> David Castellon</p>
+    <!-- Experience -->
+    <section class="card">
+      <h2>Experience</h2>
+
+      <h3>North American Stainless — Jr. Business Engineer</h3>
+      <p><em>2023–2025</em></p>
+      <ul>
+        <li>Supported and audited a custom-built computerized maintenance management system (CMMS) built with C# MAUI.</li>
+        <li>Programmatically accessed and integrated camera feeds using the Milestone C# API.</li>
+        <li>Worked on centralizing microscope images into a datastore solution.</li>
+        <li>Built internal sites and tools using C#.</li>
+      </ul>
+
+      <h3>University of Louisville — Teacher’s Assistant</h3>
+      <p><em>2022</em></p>
+      <ul>
+        <li>Worked on implementing decentralized drone drawing.</li>
+      </ul>
+
+      <h3>Daifuku — Software Engineer Co-op</h3>
+      <p><em>2021</em></p>
+      <ul>
+        <li>Programmatically controlled Microsoft Excel using the JavaScript API.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="card">
+      <h2>Education</h2>
+      <h3>University of Louisville</h3>
+      <p><em>B.S. Computer Engineering and Computer Science, 2016–2022</em></p>
+    </section>
+
+    <!-- Personal Projects -->
+    <section class="card">
+      <h2>Personal Projects</h2>
+      <h3>Half Step</h3>
+      <p>
+        A personal project focused on music tooling and experimentation.
+        <!-- Replace the # below with your actual project URL when you have it -->
+        <br />
+        <a href="#" target="_blank" rel="noopener">Project link (coming soon)</a>
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="card">
+      <h2>Skills</h2>
+      <p>
+        C, C++, C#, JavaScript, SQL, HTML, CSS, Dart, Flutter, Docker
+      </p>
+    </section>
+
+    <!-- Languages -->
+    <section class="card">
+      <h2>Languages</h2>
+      <p>English, Spanish</p>
+    </section>
+
+    <!-- YouTube videos / demos -->
+    <section class="card">
+      <h2>Project Videos</h2>
+      <p>Here are some demos of things I’ve worked on:</p>
+
+      <!-- Example YouTube embed – replace VIDEO_ID_HERE with your real video ID -->
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
-    </footer>
 
-    <script>
-      // tiny JS just to keep the year updated
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+      <!-- If you just want links instead of embeds, you can add them like this:
+      <p>
+        <a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener">
+          Watch demo on YouTube
+        </a>
+      </p>
+      -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> David Castellon</p>
+    </div>
+  </footer>
+
+  <script>
+    // keep the year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
 
