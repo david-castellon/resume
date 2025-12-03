@@ -7,131 +7,150 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">David Castellon</h1>
-      <p class="site-subtitle">
-        Computer Engineer · Building maintenance systems, data pipelines, and web/mobile apps that make work easier.
-      </p>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">David Castellon</h1>
+    <p class="site-contact">
+      Carrollton, KY ·
+      <a href="tel:+15025259983">(502) 525-9983</a> ·
+      <a href="mailto:david.castellon.work@gmail.com">david.castellon.work@gmail.com</a> ·
+      <a class="button" href="resume.pdf" download>Download resume (PDF)</a>
+    </p>
+    <p class="site-subtitle">
+      Computer Engineer with experience building computerized systems for optimizing business workflows.
+    </p>
+  </div>
+</header>
 
-  <main class="container">
-    <!-- Contact -->
-    <section class="card">
-      <h2>Contact</h2>
-      <p>
-        Carrollton, KY 41008
-      </p>
-      <p>
-        <a href="tel:+15025259983">(502) 525-9983</a><br />
-        <a href="mailto:david.castellon.work@gmail.com">david.castellon.work@gmail.com</a>
-      </p>
+  <main class="container main-layout">
+      <section class="card">
+        <h2>Skills</h2>
+        <p>
+          C, C++, C#, JavaScript, Python, SQL, HTML, CSS, Dart, Flutter, Docker
+        </p>
+      </section>
+
+      <!-- Languages -->
+      <section class="card">
+        <h2>Languages</h2>
+        <p>English, Spanish</p>
+      </section>
+
+    <section class="primary-column">
+      <!-- Experience -->
+      <section class="card">
+        <h2>Experience</h2>
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>North American Stainless — Jr. Business Engineer</h3>
+            <span class="experience-dates">2023–2025</span>
+          </div>
+          <ul>
+            <li>
+              Supported and audited a custom-built computerized maintenance management system (CMMS)
+              called Digital Forms System (DFS), originally written in C# MAUI.
+            </li>
+            <li>
+              Rewrote the DFS front end using Dart and Flutter to improve maintainability and developer
+              experience.
+            </li>
+            <li>
+              Helped design and centralize a datastore solution for microscope images.
+            </li>
+            <li>
+              Programmatically accessed and integrated camera feeds using the Milestone C# API.
+            </li>
+            <li>
+              Implemented request–reply workflows over MQ and exposed them through an HTTP API.
+            </li>
+            <li>
+              Built internal sites and tools using C# and the MVC pattern.
+            </li>
+          </ul>
+        </article>
+
+<article class="experience-item">
+  <div class="experience-header">
+    <h3>University of Louisville — Teaching Assistant</h3>
+    <span class="experience-dates">2022</span>
+  </div>
+  <ul>
+    <li>
+      Implemented decentralized drone drawing with many simulated quadcopter drones in Gazebo.
+    </li>
+    <li>
+      Demonstrated multi-drone coordination for drawing shapes in a distributed system.
+    </li>
+  </ul>
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/d-RKNVg-LW4"
+      title="Decentralized drone drawing demo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+</article>
+
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>Daifuku — Software Engineer Co-op</h3>
+            <span class="experience-dates">2021</span>
+          </div>
+          <ul>
+            <li>
+              Learned how to programmatically control Microsoft Excel using the JavaScript API
+              and Visual Basic for Applications (VBA) to automate workflows.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Education -->
+      <section class="card">
+        <h2>Education</h2>
+        <article class="item experience-item">
+          <div class="item-header">
+            <h3>University of Louisville</h3>
+            <span class="item-dates">2016–2022</span>
+          </div>
+          <p>B.S. in Computer Engineering and Computer Science</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Projects</h2>
+
+        <h3>Half Step – Real-time Audio Visualization</h3>
+        <p>Demo of Half Step, a cross-platform mobile app for visual real-time audio analysis.</p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/Q7dqs-7cx2E"
+            title="Half Step demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h3>Lidar Scan Decrypt – Campus Point Cloud</h3>
+        <p>
+          Visualization of an octomap built from raw lidar data collected over several days on campus,
+          showing the environment and walking paths.
+        </p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/NBB6wmGIBRs"
+            title="Lidar Scan Decrypt octomap demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
     </section>
 
-    <!-- Resume PDF download -->
-    <section class="card">
-      <h2>Resume (PDF)</h2>
-      <p>
-        <a href="david-castellon-resume.pdf" download>
-          Download my resume as a PDF
-        </a>
-      </p>
-    </section>
-
-    <!-- Experience -->
-    <section class="card">
-      <h2>Experience</h2>
-
-      <h3>North American Stainless — Jr. Business Engineer</h3>
-      <p><em>2023–2025</em></p>
-      <ul>
-        <li>Supported and audited a custom-built computerized maintenance management system (CMMS) written in C# MAUI, and rewrote it using Dart and Flutter.</li>
-        <li>Helped design and centralize a datastore solution for microscope images.</li>
-        <li>Programmatically accessed and integrated camera feeds using the Milestone C# API.</li>
-        <li>Implemented request–reply workflows over MQ and exposed them through an HTTP API.</li>
-        <li>Built internal sites and tools using C# and the MVC pattern.</li>
-      </ul>
-
-      <h3>University of Louisville — Teaching Assistant</h3>
-      <p><em>2022</em></p>
-      <ul>
-        <li>Implemented decentralized drone drawing using simulated quadcopter drones in Gazebo.</li>
-        <li>Demonstrated multi-drone coordination for drawing shapes in a distributed system.</li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=d-RKNVg-LW4" target="_blank" rel="noopener">
-            Watch the demo video
-          </a>
-        </li>
-      </ul>
-
-      <h3>Daifuku — Software Engineer Co-op</h3>
-      <p><em>2021</em></p>
-      <ul>
-        <li>Automated Excel workflows using the JavaScript API and Visual Basic for Applications (VBA).</li>
-      </ul>
-    </section>
-
-    <!-- Education -->
-    <section class="card">
-      <h2>Education</h2>
-      <h3>University of Louisville</h3>
-      <p><em>B.S. in Computer Engineering and Computer Science, 2016–2022</em></p>
-    </section>
-
-    <!-- Personal Projects -->
-    <section class="card">
-      <h2>Personal Projects</h2>
-
-      <h3>Half Step</h3>
-      <p>
-        Half Step is a cross-platform mobile application that helps musicians visualize audio in real time without advertisements.
-        It focuses on clean visual feedback and a simple, distraction-free interface.
-        <br />
-        <a href="https://david-castellon.github.io/resume/" target="_blank" rel="noopener">
-          View the project / demo page
-        </a>
-      </p>
-
-      <h3>Resume Site</h3>
-      <p>
-        This static site hosts my resume, project links, and demos.
-        <br />
-        <a href="https://david-castellon.github.io/resume/" target="_blank" rel="noopener">
-          Visit the live site
-        </a>
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section class="card">
-      <h2>Skills</h2>
-      <p>
-        C, C++, C#, JavaScript, Python, SQL, HTML, CSS, Dart, Flutter, Docker
-      </p>
-    </section>
-
-    <!-- Languages -->
-    <section class="card">
-      <h2>Languages</h2>
-      <p>English, Spanish</p>
-    </section>
-
-    <!-- Project Videos -->
-    <section class="card">
-      <h2>Project Videos</h2>
-      <p>Here are some demos of things I’ve worked on:</p>
-
-      <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/d-RKNVg-LW4"
-          title="Decentralized drone drawing demo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
@@ -145,4 +164,5 @@
   </script>
 </body>
 </html>
+
 
