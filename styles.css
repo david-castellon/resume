@@ -142,13 +142,13 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-.experience-header h3 {
+h3 {
   margin: 0;
   font-size: 1.05rem;
 }
 
 .experience-dates {
-  font-style: italic;
+  font-style: italic;>
   font-size: 0.95rem;
   color: #9ca3af;
 }
