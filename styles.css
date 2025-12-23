@@ -34,7 +34,6 @@ body {
 .container {
   max-width: 880px;
   margin: 0 auto;
-  padding: 1.5rem;
 }
 
 .site-header {
@@ -60,9 +59,14 @@ body {
 
 main {
   flex: 1;
-  padding-bottom: 3rem;
 }
 
+.padding-top-1rem {
+  padding-top: 1rem;
+}
+.padding-left-2rem {
+  padding-left: 2rem;
+}
 .card {
   background: rgba(15, 23, 42, 0.95);
   border-radius: var(--radius);
@@ -73,31 +77,33 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.card h2 {
-  margin-top: 0;
+h2 {
+  margin: 0;
   font-size: 1.3rem;
   color: var(--accent);
 }
 
-/* tightened spacing under section headings + softer divider */
 .card > h2 {
-  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
   padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+}
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .card p {
   line-height: 1.6;
-  margin-top: 0.4rem;
 }
-
-.card ul {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
+ul {
+  margin: 0;
+  padding: 0;
 }
-
-.card li + li {
-  margin-top: 0.4rem;
+li {
+  font-size: 0.85rem;
+  padding-top: 0.5rem;
+}
+p {
+  font-size: 0.85rem;
 }
 
 a {
@@ -110,9 +116,7 @@ a:hover {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(148, 163, 184, 0.3);
   background: linear-gradient(to right, #020617, #020818);
-  padding: 0.75rem 0 1.25rem;
   font-size: 0.85rem;
   color: var(--muted);
   margin-top: auto;
@@ -120,18 +124,21 @@ a:hover {
 
 /* Experience items: cleaner, more compact spacing */
 .experience-item {
-  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
   margin: 0;
-  padding: 0.75rem 0;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /*
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  */
 }
 
 .experience-item:first-of-type {
-  padding-top: 0.25rem; /* small gap under "Experience" */
 }
 
 .experience-item:last-of-type {
   border-bottom: none;
-  padding-bottom: 0;
 }
 
 .experience-header {
@@ -143,14 +150,31 @@ a:hover {
 }
 
 h3 {
+  padding: 0;
   margin: 0;
   font-size: 1.05rem;
 }
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
 
+.job-title {
+  font-style: italic;
+  font-weight: normal;
+  color: #fff;
+}
+.job-location {
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+}
 .experience-dates {
-  font-style: italic;>
-  font-size: 0.95rem;
-  color: #9ca3af;
+  font-style: normal;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 /* Layout for main + sidebar – if you already have this elsewhere, keep it;
@@ -162,6 +186,8 @@ h3 {
 }
 
 .primary-column {
+  padding: 0;
+  margin: 0;
   flex: 2;
 }
 
@@ -170,10 +196,8 @@ h3 {
 }
 
 .site-header {
-  padding: 2.5rem 0 0.5rem; /* was 3rem 0 1rem */
 }
 
 /* main uses .container too, so override just for main */
 main.container {
-  padding-top: 0.5rem;      /* was 1.5rem from .container */
 }

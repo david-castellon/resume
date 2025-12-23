@@ -11,7 +11,9 @@
       <div class="container">
         <h1 class="site-title">David Castellon</h1>
         <a class="button" href="resume.pdf" download>Download resume (PDF)</a>
-        <p class="site-subtitle">Software Engineer with experience building and maintaining computerized systems for optimizing business workflows.</p>
+        <p class="site-subtitle">
+        Software Engineer with experience building and maintaining computerized systems for optimizing business workflows.
+        </p>
       </div>
     </header>
 
@@ -88,7 +90,12 @@
           <h3 class="experience-dates">2021</h3>
           <h3 class="job-location">Daifuku</h3>
           <h4 class="job-title">Software Engineer Co-op</h4>
-          <p class="padding-left-2rem">Learned how to programmatically control Microsoft Excel using the JavaScript API and Visual Basic for Applications (VBA) to automate workflows.</p>
+          <ul class="padding-left-2rem">
+            <li>
+              Learned how to programmatically control Microsoft Excel using the JavaScript API
+              and Visual Basic for Applications (VBA) to automate workflows.
+            </li>
+          </ul>
         </article>
       </section>
 
